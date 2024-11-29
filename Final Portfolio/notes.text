@@ -1,0 +1,10 @@
+git status
+git init
+git add
+git commit -m "portfolio":
+git remote add orgin url of github-reposiotry to intrzally
+git pish orgin master 
+
+
+
+media queries:
