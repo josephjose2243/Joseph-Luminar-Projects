@@ -1,0 +1,411 @@
+/* General styles for margin, padding, and font */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+/* Container background styling */
+.container {
+    background-image: url(https://img.freepik.com/free-vector/black-background-with-focus-spot-light_1017-27230.jpg?t=st=1727781270~exp=1727781870~hmac=1d85f608d3f599135dd543f219987f0c6bbedf7e6cca2d54aa067062ea564837);
+    min-height: 100vh;
+    background-size: cover;
+}
+
+/* Navigation bar styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo and store name styling */
+.logo-text {
+    font-family: "Alata", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+}
+
+.name {
+    color: #ffffff;
+    margin-left: 40px;
+}
+
+/* Navigation list item styling */
+.Listitem {
+    color: #ffffff;
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+}
+
+/* Links styling */
+.Links {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Welcome heading and paragraph styling */
+.head {
+    color: aliceblue;
+    font-size: 40px;
+}
+
+.para {
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+    margin-top: 7%;
+    line-height: 35px;
+    font-size: 20px;
+}
+
+/* Welcome body section with grid layout */
+.welcome-body {
+    padding: 50px;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Brands section header styling */
+.our {
+    font-size: 30px;
+    text-align: center;
+    padding-right: 30px;
+}
+
+.text {
+    margin-right: 5px;
+    padding: 10px;
+    font-weight: 700;
+    margin-top: 30px;
+    text-align: center;
+    margin-right: 40px;
+}
+
+/* Brands display section with flexbox */
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Individual brand block styling */
+.brand {
+    width: 200px;
+}
+
+/* Brand images styling */
+.brandimages {
+    width: 50%;
+    border-radius: 5%;
+    border: solid;
+}
+
+/* Grid Layout */
+.parent {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content {
+    text-align: center;
+    line-height: 30px;
+}
+
+.button {
+    padding: 50px;
+    color: #020202;
+    text-align: center;
+}
+
+.btn {
+    height: 2%;
+    width: 3%;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    border-radius: 60px;
+}
+
+.parent2 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img2 {
+    padding: 10px;
+    border: solid;
+    text-align: center;
+}
+
+.bar {
+    margin-top: 20px;
+    height: 3px;
+    background-color: black;
+}
+
+.parent3 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img2 {
+    text-align: center;
+}
+
+.text {
+    text-align: center;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #f5f5f5;
+    padding: 40px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.footer-logo img {
+    width: 150px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-links div {
+    text-align: left;
+    margin: 10px;
+}
+
+.footer-links h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    color: #28a745;
+}
+
+.contact-us p {
+    font-size: 14px;
+    color: #333;
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-icons a:hover {
+    color: #28a745;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+}
+
+.footer-bottom p {
+    color: #333;
+    font-size: 14px;
+}
+
+/* Media Queries for Tablets and Smaller Devices */
+@media (max-width: 768px) {
+    .container {
+        background-size: contain;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .logo {
+        width: 80px;
+        margin-bottom: 10px;
+    }
+
+    .name {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .Listitem {
+        margin: 0px 10px;
+    }
+
+    .head {
+        font-size: 32px;
+    }
+
+    .para {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .welcome-body {
+        grid-template-columns: 1fr;
+        padding: 30px;
+    }
+
+    .main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .brandimages {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .parent {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100px;
+        height: auto;
+        font-size: 16px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links div {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 480px) {
+    .container {
+        background-size: cover;
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 60px;
+        margin-bottom: 5px;
+    }
+
+    .name {
+        font-size: 18px;
+        margin-left: 5px;
+    }
+
+    .Listitem {
+        margin: 0px 5px;
+    }
+
+    .head {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .para {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .welcome-body {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .brandimages {
+        width: 70%;
+        margin-bottom: 10px;
+    }
+
+    .parent {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn {
+        width: 80px;
+        height: auto;
+        font-size: 14px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links div {
+        margin: 0;
+        text-align: center;
+    }
+}
